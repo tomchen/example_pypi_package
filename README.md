@@ -1,5 +1,7 @@
 # Example PyPI (Python Package Index) Package & Tutorial / Instruction / Workflow for 2021
 
+[![PyPI package](https://img.shields.io/badge/pip%20install-example--pypi--package-brightgreen)](https://pypi.org/project/example-pypi-package/) [![Actions Status](https://github.com/tomchen/example_pypi_package/workflows/Test/badge.svg)](https://github.com/tomchen/example_pypi_package/actions) [![License](https://img.shields.io/github/license/tomchen/example_pypi_package)](https://github.com/tomchen/example_pypi_package/blob/master/LICENSE)
+
 This is an example [PyPI](https://pypi.org/) (Python Package Index) package set up with automated tests and package publishing using GitHub Actions CI/CD. It is made primarily for GitHub + VS Code (Windows / Mac / Linux) users who are about to write and publish their first PyPI package. The package could serve as a starter / boilerplate and the tutorial could give you a quick and concise explaination to solve some small but annoying problems you might encounter, such as package / module name confusion, and VS Code test configuration issues.
 
 <details><summary><strong>Differences from pypa/sampleproject (click to show/hide)</strong></summary>
