@@ -1,8 +1,8 @@
 # Example PyPI (Python Package Index) Package & Tutorial / Instruction / Workflow for 2021
 
-[![PyPI package](https://img.shields.io/badge/pip%20install-example--pypi--package-brightgreen)](https://pypi.org/project/example-pypi-package/) [![Actions Status](https://github.com/tomchen/example_pypi_package/workflows/Test/badge.svg)](https://github.com/tomchen/example_pypi_package/actions) [![License](https://img.shields.io/github/license/tomchen/example_pypi_package)](https://github.com/tomchen/example_pypi_package/blob/master/LICENSE)
+[![PyPI package](https://img.shields.io/badge/pip%20install-example--pypi--package-brightgreen)](https://pypi.org/project/example-pypi-package/) [![version number](https://img.shields.io/pypi/v/example-pypi-package?color=green&label=version)](https://github.com/tomchen/example_pypi_package/releases) [![Actions Status](https://github.com/tomchen/example_pypi_package/workflows/Test/badge.svg)](https://github.com/tomchen/example_pypi_package/actions) [![License](https://img.shields.io/github/license/tomchen/example_pypi_package)](https://github.com/tomchen/example_pypi_package/blob/master/LICENSE)
 
-This is an example [PyPI](https://pypi.org/) (Python Package Index) package set up with automated tests and package publishing using GitHub Actions CI/CD. It is made primarily for GitHub + VS Code (Windows / Mac / Linux) users who are about to write and publish their first PyPI package. The package could serve as a starter / boilerplate and the tutorial could give you a quick and concise explaination to solve some small but annoying problems you might encounter, such as package / module name confusion, and VS Code test configuration issues.
+This is an example [PyPI](https://pypi.org/) (Python Package Index) package set up with automated tests and package publishing workflow using GitHub Actions CI/CD. It is made primarily for GitHub + VS Code (Windows / Mac / Linux) users who are about to write and publish their first PyPI package. The package could serve as a starter / boilerplate / demo and the tutorial could give you a quick and concise explaination to solve some small but annoying problems you might encounter, such as package / module name confusion, and VS Code test configuration issues.
 
 <details><summary><strong>Differences from pypa/sampleproject (click to show/hide)</strong></summary>
 
@@ -22,7 +22,13 @@ This example package is inspired by / based on the [official sample project pypa
 
 ## Make necessary changes
 
-Fork, clone or download the repository [github.com/tomchen/example_pypi_package](https://github.com/tomchen/example_pypi_package).
+### Use as a template
+
+[![Use the template](https://img.shields.io/static/v1?label=&message=Click%20here%20to%20use%20this%20package%20as%20a%20template%20to%20start%20a%20new%20repo%20on%20GitHub&color=brightgreen&style=for-the-badge)](https://github.com/tomchen/example_pypi_package/generate)
+
+(Click the above button to use this example package as a template for your new GitHub repo, this will initialize a new repository and my commits will not be in your git history)
+
+(If you do not use GitHub, you can [download the archive of the example package](https://github.com/tomchen/example_pypi_package/archive/main.zip))
 
 ### Package, module name
 
@@ -176,13 +182,15 @@ On the page of your newly created or existing GitHub repo, click **Settings** ->
 The example package has automated tests and upload (publishing) already set up with GitHub Actions:
 
 - Every time you `git push` your `master` or `main` branch, the package is automatically tested against the desired Python versions with GitHub Actions.
-- Every time a new release (either the initial version or an updated version) is created, the package is automatically uploaded to PyPI with GitHub Actions.
+- Every time a new release (either the initial version or an updated version) is created, the latest version of the package is automatically uploaded to PyPI with GitHub Actions.
 
 ### View it on pypi.org
 
 After your package is published on PyPI, go to [https://pypi.org/project/example-pypi-package/](https://pypi.org/project/example-pypi-package/) (`_` becomes `-`). Copy the command on the page, execute it to download and install your package from PyPI. (or test.pypi.org if you use that)
 
-<details><summary><strong>If you publish the package to PyPI manually, click to read</strong></summary>
+If you want to modify the description / README of your package on pypi.org, you have to publish a new version.
+
+<details><summary><strong>If you publish your package to PyPI manually, click to read</strong></summary>
 
 ### Install Twine
 
@@ -246,3 +254,5 @@ python -m twine upload --repository pypi dist/*
 - [PyPA's Python Packaging User Guide](https://packaging.python.org/tutorials/packaging-projects/)
 - [Stackoverflow questions and answers](https://stackoverflow.com/questions/41093648/how-to-test-that-pypi-install-will-work-before-pushing-to-pypi-python)
 - [GitHub Actions Guides: Building and testing Python](https://docs.github.com/en/free-pro-team@latest/actions/guides/building-and-testing-python)
+
+Btw, if you want to publish TypeScript (JavaScript) package to the npm registry, go to [Example TypeScript Package ready to be published on npm for 2021](https://github.com/tomchen/example-typescript-package).
