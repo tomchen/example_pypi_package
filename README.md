@@ -181,7 +181,7 @@ On the page of your newly created or existing GitHub repo, click **Settings** ->
 
 The example package has automated tests and upload (publishing) already set up with GitHub Actions:
 
-- Every time you `git push` your `master` or `main` branch, the package is automatically tested against the desired Python versions with GitHub Actions.
+- Every time you `git push` or a pull request is submitted on your `master` or `main` branch, the package is automatically tested against the desired Python versions with GitHub Actions.
 - Every time a new release (either the initial version or an updated version) is created, the latest version of the package is automatically uploaded to PyPI with GitHub Actions.
 
 ### View it on pypi.org
